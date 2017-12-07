@@ -5,3 +5,4 @@ RUN apt-get update && apt-get install python python-pip jq gettext -y && \
     apt-get remove python-pip -y && \
     apt-get autoclean -y && apt-get clean -y
 
+ENTRYPOINT [ "/bin/bash" ]
