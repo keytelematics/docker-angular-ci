@@ -4,7 +4,7 @@ A docker image for building, testing and deploying Angular applications to AWS.
 
 ## Build It
 ```
-docker build -t keytelematics/docker-angular-ci .
+docker build -t keytelematics/docker-angular-ci:latest .
 ```
 
 ## Run It
