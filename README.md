@@ -7,6 +7,11 @@ A docker image for building, testing and deploying Angular applications to AWS.
 docker build -t keytelematics/docker-angular-ci:latest .
 ```
 
+## Build On ARM Macs
+```
+docker buildx build --platform linux/amd64 -t keytelematics/docker-angular-ci:node18 --push .
+```
+
 ## Run It
 ```
 docker run -v <your_code_path>:/tests keytelematics/docker-angular-ci bash -x /tests/<your_build_script>
