@@ -33,7 +33,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v1
         with:
-          images: keytelematics/docker-angular-ci:node18
+          images: keytelematics/docker-angular-ci:latest
       
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
@@ -43,5 +43,5 @@ jobs:
           push: ${{ github.ref == 'refs/heads/master' }}
           tags: |
             keytelematics/docker-angular-ci:latest
-            keytelematics/docker-angular-ci:node18
+            keytelematics/docker-angular-ci:node20
           labels: ${{ steps.meta.outputs.labels }}
