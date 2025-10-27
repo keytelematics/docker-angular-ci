@@ -9,7 +9,7 @@ docker build -t keytelematics/docker-angular-ci:latest .
 
 ## Build On ARM Macs
 ```
-docker buildx build --platform linux/amd64 -t keytelematics/docker-angular-ci:node18 --push .
+docker buildx build --platform linux/amd64 -t keytelematics/docker-angular-ci:18 --push .
 ```
 
 ## Run It
