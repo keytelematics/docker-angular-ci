@@ -40,7 +40,7 @@ jobs:
         with:
           context: .
           platforms: linux/amd64
-          push: github.ref == 'refs/heads/master'
+          push: github.ref == 'refs/heads/master' ? true : false
           tags: |
             keytelematics/docker-angular-ci:latest
             keytelematics/docker-angular-ci:node18
