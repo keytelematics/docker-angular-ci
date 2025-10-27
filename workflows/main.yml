@@ -36,7 +36,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v1
         with:
-          images: keytelematics/docker-angular-ci
+          images: keytelematics/docker-angular-ci:node18
       
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
