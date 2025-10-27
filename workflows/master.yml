@@ -1,6 +1,10 @@
 name: Publish Docker Image 
 
-on: push
+on:
+  push:
+    branches:
+      - master
+  
 
 jobs:
   push_to_registry:
@@ -39,7 +43,7 @@ jobs:
         with:
           context: .
           platforms: linux/arm64,linux/amd64
-          push: github.ref == 'refs/heads/master'
+          push: true
           tags: |
             keytelematics/docker-angular-ci:latest
             keytelematics/docker-angular-ci:node18
