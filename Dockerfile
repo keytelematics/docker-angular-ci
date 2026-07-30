@@ -1,8 +1,8 @@
-FROM openjdk:8-jre
+FROM eclipse-temurin:8-jre-noble
 
 # from https://github.com/shusson/docker-chrome-headless/blob/master/Dockerfile
 
-RUN curl -sL https://deb.nodesource.com/setup_20.x | bash - && \
+RUN curl -sL https://deb.nodesource.com/setup_24.x | bash - && \
     apt-get update && \
     apt-get install -y xvfb wget nodejs && \
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \

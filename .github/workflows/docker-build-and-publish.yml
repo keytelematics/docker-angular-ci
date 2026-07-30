@@ -43,5 +43,5 @@ jobs:
           push: ${{ github.ref == 'refs/heads/master' }}
           tags: |
             keytelematics/docker-angular-ci:latest
-            keytelematics/docker-angular-ci:node20
+            keytelematics/docker-angular-ci:node24
           labels: ${{ steps.meta.outputs.labels }}
